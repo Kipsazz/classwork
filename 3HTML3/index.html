@@ -1,0 +1,96 @@
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>3oji paskaita | Formas</title>
+</head>
+
+<body>
+	<p>Test tekstas</p>
+	<form>
+		<fieldset>
+			<legend>Asmens duomenys</legend>
+			<table border="1">
+
+				<tbody>
+					<tr>
+						<td>
+							<label for="name">Asmens vardas: </label>
+						</td>
+						<td colspan="2">
+							<input type="text" id="name" name="name" placeholder="Įveskite savo vardą" required="">
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<label for="city">Asmens vietovė:</label>
+						</td>
+						<td colspan="2">
+							<input type="text" id="city" name="city" value="Kauno raj." readonly="">
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</fieldset>
+
+		<fieldset>
+			<legend>Pomegiai</legend>
+			<table border="1">
+
+				<tbody>
+					<tr>
+						<td>
+							<input type="date">
+						</td>
+						<td>
+							<input type="email" placeholder="Jūsų el. pašto adresas">
+						</td>
+						<td>
+							<select>
+								<option value="">Pasirink paslaugą</option>
+								<option value="Kasti (dideli sklypa)">Kasti</option>
+								<option value="Rauti">Rauti</option>
+								<option value="Pjauti">Pjauti</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<input type="password" placeholder="Sukurkite slaptažodį">
+						</td>
+						<td colspan="2">
+							<textarea></textarea>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<input type="checkbox" id="hobby-swim" name="hobby-swim">
+							<label for="hobby-swim">Paukimas</label>
+							<input type="checkbox" name="hobby-run">
+						</td>
+						<td>
+							<input type="radio" id="gender-male" name="sex">
+							<lable for="gender-male">Vyras</lable>
+
+							<input type="radio" id="gender-female" name="sex">
+							<lable for="gender-female" style="width: 51px; height: 18px;">Moteris</lable>
+						</td>
+					</tr>
+					<tr>
+						<!-- css style not alowed-->
+						<th colspan="3">
+							<input type="submit" value="Siųsti">
+						</th>
+					</tr>
+				</tbody>
+			</table>
+		</fieldset>
+	</form>
+
+	<p>Norint sukurti paragrafa reikia rasyti &lt;p&gt;, o uzdaryti reikia rasyti &lt;/ p&gt; </p>
+	<div>
+		<div>
+			<p>blokinis elementas dvieju blokiniu div viduje</p>
+		</div>
+	</div>
+
+</body>

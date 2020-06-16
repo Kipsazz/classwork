@@ -1,42 +1,38 @@
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>3oji paskaita | Formas</title>
-</head>
+<!DOCTYPE html>
+<html lang="lt">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>3oji paskaita | Formas</title>
+	</head>
 
-<body>
-	<p>Test tekstas</p>
-	<form>
-		<fieldset>
-			<legend>Asmens duomenys</legend>
-			<table border="1">
-
-				<tbody>
+	<body>
+		<p>Test tekstas</p>
+		<form>
+			<fieldset>
+				<legend>Asmens duomenys</legend>
+				<table border="1">
 					<tr>
 						<td>
 							<label for="name">Asmens vardas: </label>
 						</td>
-						<td colspan="2">
-							<input type="text" id="name" name="name" placeholder="Įveskite savo vardą" required="">
+						<td>
+							<input type="text" id="name" name="name" placeholder="Įveskite savo vardą" required>
 						</td>
 					</tr>
 					<tr>
 						<td>
 							<label for="city">Asmens vietovė:</label>
 						</td>
-						<td colspan="2">
-							<input type="text" id="city" name="city" value="Kauno raj." readonly="">
+						<td>
+							<input type="text" id="city" name="city" value="Kauno raj." readonly>
 						</td>
 					</tr>
-				</tbody>
-			</table>
-		</fieldset>
-
-		<fieldset>
-			<legend>Pomegiai</legend>
-			<table border="1">
-
-				<tbody>
+				</table>
+			</fieldset>
+			<fieldset>
+				<legend>Pomėgiai</legend>
+				<table border="1">
 					<tr>
 						<td>
 							<input type="date">
@@ -45,7 +41,7 @@
 							<input type="email" placeholder="Jūsų el. pašto adresas">
 						</td>
 						<td>
-							<select>
+							<select name="service">
 								<option value="">Pasirink paslaugą</option>
 								<option value="Kasti (dideli sklypa)">Kasti</option>
 								<option value="Rauti">Rauti</option>
@@ -63,16 +59,21 @@
 					</tr>
 					<tr>
 						<td>
+							<span>Pasirinkite hobį:</span>
 							<input type="checkbox" id="hobby-swim" name="hobby-swim">
-							<label for="hobby-swim">Paukimas</label>
-							<input type="checkbox" name="hobby-run">
+							<label for="hobby-swim">Plaukimas</label>
+							<input type="checkbox" id="hobby-run" name="hobby-run">
+							<label for="hobby-run">Bėgimas</label>
 						</td>
-						<td>
-							<input type="radio" id="gender-male" name="sex">
-							<lable for="gender-male">Vyras</lable>
+						<td colspan="2">
+							<input type="radio" id="gender-male" name="gender">
+							<label for="gender-male">Vyras</label>
 
-							<input type="radio" id="gender-female" name="sex">
-							<lable for="gender-female" style="width: 51px; height: 18px;">Moteris</lable>
+							<input type="radio" id="gender-female" name="gender">
+							<label for="gender-female">Moteris</label>
+
+							<input type="radio" id="gender-no-matter" name="gender">
+							<label for="gender-no-matter">Nesakysiu/nesvarbu</label>
 						</td>
 					</tr>
 					<tr>
@@ -81,16 +82,15 @@
 							<input type="submit" value="Siųsti">
 						</th>
 					</tr>
-				</tbody>
-			</table>
-		</fieldset>
-	</form>
+				</table>
+			</fieldset>
+		</form>
 
-	<p>Norint sukurti paragrafa reikia rasyti &lt;p&gt;, o uzdaryti reikia rasyti &lt;/ p&gt; </p>
-	<div>
+		<p>Norint sukurti paragrafą reikia rašyti &lt;p&gt;, o uždaryti reikia rašyti šitaip &lt;&sol;&#112;&gt;</p>
 		<div>
-			<p>blokinis elementas dvieju blokiniu div viduje</p>
+			<div>
+				<p>Blokinis elementas dvieju blokinių div viduje.</p>
+			</div>
 		</div>
-	</div>
-
-</body>
+	</body>
+</html>
